@@ -5,7 +5,10 @@ const blogRoutes = require('./routes/blogRoutes');
 
 const DB_URI = 'mongodb+srv://nachtstren:kazehaya@belajarnode.5ceq1.mongodb.net/belajarnode?retryWrites=true&w=majority'
 mongoose.connect(DB_URI, {useNewUrlParser: true, useUnifiedTopology: true})
-	.then((result)=> app.listen(3000))
+	.then((result)=>{ 
+		console.log('listening for request on port 3000')
+		app.listen(3000) 
+	})
 	.catch((err)=> console.log(err))
 app.set('view engine', 'ejs');
 
