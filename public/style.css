@@ -27,6 +27,7 @@ nav{
 nav ul{
   	display: flex;
   	justify-content: space-between;
+    align-self: center;
   	align-items: flex-end;
 }
 nav li{
@@ -43,7 +44,11 @@ nav p, nav a{
 footer{
   	color: #777;
   	text-align: center;
-  	margin: 80px auto 20px;
+    display: inline-block;
+    width: 100%;
+  	margin: 0 auto 20px;
+    position: fixed;
+    bottom: 0;
 }
 h2{
   	margin-bottom: 40px;
@@ -105,6 +110,6 @@ textarea{
   	color: white;
   	padding: 6px;
   	border: 0;
-  	font-size: 1.2em;
+  	font-size: 1.2rem;
   	cursor: pointer;
 }
